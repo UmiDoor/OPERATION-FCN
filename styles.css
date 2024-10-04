@@ -1,0 +1,247 @@
+/* Kallisto Fonts */
+
+/* Kallisto Light */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Kallisto Light Italic */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Kallisto Medium */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Kallisto Medium Italic */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Kallisto Bold */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Kallisto Bold Italic */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Kallisto Heavy */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Kallisto Heavy Italic */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-HeavyItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Kallisto Thin */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Kallisto Thin Italic */
+@font-face {
+    font-family: 'Kallisto';
+    src: url('Fonts/Kallisto/Kallisto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Tenada Font */
+@font-face {
+    font-family: 'Tenada';
+    src: url('Fonts/Tenada/Tenada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Video Fonts */
+
+/* Video Light */
+@font-face {
+    font-family: 'Video';
+    src: url('Fonts/Video/Video-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Video Medium */
+@font-face {
+    font-family: 'Video';
+    src: url('Fonts/Video/Video-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Video SemiBold */
+@font-face {
+    font-family: 'Video';
+    src: url('Fonts/Video/Video-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Video Bold */
+@font-face {
+    font-family: 'Video';
+    src: url('Fonts/Video/Video-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Video Condensed Medium */
+@font-face {
+    font-family: 'VideoCond';
+    src: url('Fonts/Video/VideoCond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Video Condensed SemiBold */
+@font-face {
+    font-family: 'VideoCond';
+    src: url('Fonts/Video/VideoCond-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Video Condensed Bold */
+@font-face {
+    font-family: 'VideoCond';
+    src: url('Fonts/Video/VideoCond-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #001735;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centers text within its container */
+
+    opacity: 0; /* Start the page invisible */
+    transition: opacity 1.5s ease-in-out; /* Fade-in transition */
+}
+
+body.loaded {
+    opacity: 1; /* Fully visible after the fade-in */
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.center div {
+    max-width: 920px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-family: Tenada, sans-serif;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-family: Tenada, sans-serif;
+}
+
+.eyebrow {
+    font-size: 1.4em;
+    margin-bottom: 1.3em;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: kallisto, sans-serif;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+h1, h2, h3, p {
+    margin: 0.6em 0;
+}
+
+.cta-button {
+    background: linear-gradient(-40deg, #FF00FF, #F2B880); /* Gradient from pink to peach */
+    color: #001735; /* Text color */
+    border: none;
+    padding: 25px 50px; /* Increased padding for a wider button */
+    font-size: 22px; /* Larger font size */
+    font-weight: bold;
+    border-radius: 10px; /* Smooth border radius */
+    cursor: pointer;
+    margin-top: 20px;
+    width: 34%;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Shrink on click and immediately return to original size */
+.cta-button:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+    transition: transform 0.05s ease; /* Super quick return to normal size */
+}
+
+.gradient {
+    background: linear-gradient(180deg, #FF00FF 20%, #f89e4a 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#without {
+    font-weight: 700;
+}
+
+
